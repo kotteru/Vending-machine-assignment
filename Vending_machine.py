@@ -35,7 +35,7 @@ class VendingMachine:                                                           
 
     print("-" * 55)
 
-    def select_item(self, code):                                                                    # allows user to select an item by entering its code                   
+    def select_item(self, code):                                                                    # allows user to select an item by entering its code (note that code is case-sensitive)                 
         if code in self.items:                                                                      # validates if the entered code exists in the items dictionary
             item = self.items[code]
             if item['stock'] > 0:                                                                   # checks if the selected item is still in stock
@@ -90,5 +90,6 @@ def main():                                                                     
                 print("Invalid amount. Please enter a number.")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":                                                                          # program runs only if this file is executed directly
+
     main()
