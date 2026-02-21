@@ -1,16 +1,3 @@
-# Class assignment - Vending Machine
-# Write Vending machine using python OOPs concept with below functionalities
-# 1. Display items available in the vending machine with their prices and quantities.   
-# 2. Allow users to select an item by entering its code.
-# 3. Check if the selected item is in stock. If not, display an appropriate
-#    message and allow the user to make another selection.
-# 4. Prompt the user to enter the amount of money they are inserting into the machine
-# 5. Check if the inserted amount is sufficient to purchase the selected item.
-#    If not, display an appropriate message and allow the user to insert more money or cancel
-# 6. Dispense the item and provide change if necessary.
-
-
-
 class VendingMachine:                                                                               # class representation of vending machine
     def __init__(self):                                                                             # initializes the vending machine with items, prices, and stock
         self.items = {
@@ -92,4 +79,5 @@ def main():                                                                     
 
 if __name__ == "__main__":                                                                          # program runs only if this file is executed directly
     main()
+
 
